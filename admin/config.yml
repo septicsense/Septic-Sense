@@ -1,10 +1,10 @@
-# /admin/config.yml
+# /admin/config.yml (Final Corrected Version)
 
-# The backend specifies how to connect to your repository
 backend:
   name: github
   repo: septicsense/Septic-Sense # Your username and repository name
   branch: main # The branch to publish to
+  site_domain: septicsense.github.io # The new line that fixes the login issue
 
 # This is where all media files (like images you upload in posts) will be stored
 media_folder: "assets/images/uploads"
@@ -24,4 +24,4 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Excerpt (Short Summary)", name: "excerpt", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" } # THIS IS THE RICH TEXT EDITOR
+      - { label: "Body", name: "body", widget: "markdown" } # The Rich Text Editor
