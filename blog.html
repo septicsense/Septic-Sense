@@ -1,0 +1,37 @@
+---
+# /blog.html
+layout: default
+title: Septic Sense Blog
+description: "The latest articles, guides, and tips on septic system maintenance, troubleshooting, and care from the experts at Septic Sense."
+---
+
+<div class="bg-white">
+  <!-- Page Header -->
+  <div class="container mx-auto px-4 py-12 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold font-heading text-text-primary">Septic Sense Blog</h1>
+    <p class="mt-4 text-lg text-text-secondary max-w-2xl mx-auto">The latest articles, guides, and tips on septic system maintenance, troubleshooting, and care.</p>
+  </div>
+
+  <!-- Blog Post Grid -->
+  <div class="container mx-auto px-4 pb-16 sm:pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {% for post in site.posts %}
+      <article class="bg-surface rounded-lg border border-border shadow-card hover:shadow-card-elevated transition-shadow duration-200 flex flex-col">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="w-full h-48 object-cover rounded-t-lg">
+        </a>
+        <div class="p-6 flex flex-col flex-grow">
+          <p class="text-sm text-text-secondary">{{ post.date | date: "%B %d, %Y" }} • {{ post.author }}</p>
+          <h2 class="mt-2 text-xl font-bold font-heading hover:text-primary flex-grow">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <p class="mt-2 text-text-secondary">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+          <a href="{{ post.url | relative_url }}" class="mt-4 inline-block font-bold text-primary hover:underline">Read Full Article →</a>
+        </div>
+      </article>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
