@@ -1,0 +1,26 @@
+<!-- /_includes/header.html -->
+<header class="bg-surface shadow-card sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="{{ '/' | relative_url }}" class="flex items-center space-x-2">
+                <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Septic Sense Logo" class="h-8 w-auto">
+                <span class="text-xl font-heading font-bold text-text-primary">SepticSense</span>
+            </a>
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="{{ '/' | relative_url }}" class="text-text-secondary hover:text-primary font-semibold">Home</a>
+                <a href="#" class="text-text-secondary hover:text-primary font-semibold">Tools</a>
+                <a href="#" class="text-text-secondary hover:text-primary font-semibold">Care Guides</a>
+                <a href="#" class="font-bold text-primary border-b-2 border-primary pb-1">Blog</a>
+                <a href="#" class="text-text-secondary hover:text-primary font-semibold">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button (functionality to be added later) -->
+            <div class="md:hidden">
+                <button class="text-text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
