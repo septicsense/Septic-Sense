@@ -1,0 +1,27 @@
+# /admin/config.yml
+
+# The backend specifies how to connect to your repository
+backend:
+  name: github
+  repo: septicsense/Septic-Sense # Your username and repository name
+  branch: main # The branch to publish to
+
+# This is where all media files (like images you upload in posts) will be stored
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+# This defines your content types. We only have one: Blog Posts.
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/posts
+    label: "Blog Posts" # Used in the UI
+    folder: "_posts" # The folder where blog post files are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template for new posts
+    fields: # The fields for each document, which appear in the editor
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Septic Sense Team" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Excerpt (Short Summary)", name: "excerpt", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" } # THIS IS THE RICH TEXT EDITOR
