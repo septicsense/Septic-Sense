@@ -1,22 +1,15 @@
 /* /assets/css/style.css */
 
-/* Importing the 'Onest' font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&display=swap');
+/* Importing the correct fonts from your Tailwind config */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 /* Applying the font to the whole site */
 body {
-    font-family: 'Onest', sans-serif;
-    background-color: #FCFCFC; /* A very light grey, almost white background */
+    font-family: 'Source Sans Pro', sans-serif; /* Default body font */
+    background-color: #FAFAF9; /* Your specified background color */
+    color: #1F2937; /* Your primary text color */
 }
 
-/* Custom class for the specific green color used in your design */
-.brand-green {
-    background-color: #00B074;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif; /* Heading font */
 }
-
-/* Custom class for the specific dark blue/navy color from your footer */
-.brand-navy {
-    background-color: #1E2A3A;
-}
-
-/* You can add any other custom global styles here if needed */
