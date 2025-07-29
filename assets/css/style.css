@@ -1,0 +1,22 @@
+/* /assets/css/style.css */
+
+/* Importing the 'Onest' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&display=swap');
+
+/* Applying the font to the whole site */
+body {
+    font-family: 'Onest', sans-serif;
+    background-color: #FCFCFC; /* A very light grey, almost white background */
+}
+
+/* Custom class for the specific green color used in your design */
+.brand-green {
+    background-color: #00B074;
+}
+
+/* Custom class for the specific dark blue/navy color from your footer */
+.brand-navy {
+    background-color: #1E2A3A;
+}
+
+/* You can add any other custom global styles here if needed */
