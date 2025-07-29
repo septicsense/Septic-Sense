@@ -1,11 +1,10 @@
-# /admin/config.yml (Final Corrected Version for GitHub Pages Sub-Directory)
+# /admin/config.yml (Corrected .com domain)
 
-# The backend specifies how to connect to your repository
 backend:
   name: github
   repo: septicsense/Septic-Sense # Your username and repo
   branch: main # The branch to publish to
-  base_url: https://api.decapcms.org # Tells Decap to use the official auth gateway
+  base_url: https://api.decapcms.com # CORRECTED from .org to .com
   auth_endpoint: auth # Specifies the path for authentication on the gateway
 
 # This is where all media files will be stored
@@ -14,16 +13,16 @@ public_folder: "/assets/images/uploads"
 
 # This defines your content types
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/posts
-    label: "Blog Posts" # Used in the UI
-    folder: "_posts" # The folder where blog post files are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template for new posts
-    fields: # The fields for each document, which appear in the editor
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Septic Sense Team" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Excerpt (Short Summary)", name: "excerpt", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" } # The Rich Text Editor
+      - { label: "Body", name: "body", widget: "markdown" }
