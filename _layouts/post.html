@@ -1,0 +1,28 @@
+---
+# /_layouts/post.html
+layout: default
+---
+
+<article class="container mx-auto px-4 py-12 sm:py-16">
+  <div class="max-w-3xl mx-auto">
+    
+    <!-- Post Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl md:text-4xl font-extrabold font-heading text-text-primary leading-tight">{{ page.title }}</h1>
+      <p class="mt-4 text-lg text-text-secondary">
+        Posted on {{ page.date | date: "%B %d, %Y" }} by {{ page.author }}
+      </p>
+    </header>
+
+    <!-- Featured Image -->
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="w-full rounded-lg shadow-md mb-8">
+    {% endif %}
+
+    <!-- Post Content -->
+    <div class="prose prose-lg max-w-none text-text-primary">
+      {{ content }}
+    </div>
+
+  </div>
+</article>
