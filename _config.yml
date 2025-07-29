@@ -1,0 +1,16 @@
+# Site settings
+title: Septic Sense
+description: "Your guide to septic system maintenance, care, and solutions. Expert advice for homeowners."
+url: "https://septicsense.github.io" # This will be your live site URL
+baseurl: "/Septic-Sense" # This MUST match your repository name
+
+# Author/Owner
+author:
+  name: Septic Sense
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# We will add more configurations here later.
