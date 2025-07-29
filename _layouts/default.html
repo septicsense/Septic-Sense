@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
+    <title>{{ page.title | default: site.title }} - {{ site.description }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <script>
+    // This is your custom Tailwind configuration from tailwind.config.js
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: "#2563EB", 50: "#EFF6FF", 100: "#DBEAFE", 500: "#3B82F6", 600: "#2563EB", 700: "#1D4ED8" },
+            secondary: { DEFAULT: "#059669", 50: "#ECFDF5", 100: "#D1FAE5", 500: "#10B981", 600: "#059669", 700: "#047857" },
+            accent: { DEFAULT: "#DC2626", 50: "#FEF2F2", 100: "#FEE2E2", 500: "#EF4444", 600: "#DC2626", 700: "#B91C1C" },
+            background: "#FAFAF9",
+            surface: "#FFFFFF",
+            text: { primary: "#1F2937", secondary: "#6B7280" },
+            success: { DEFAULT: "#10B981", 50: "#ECFDF5", 100: "#D1FAE5" },
+            warning: { DEFAULT: "#F59E0B", 50: "#FFFBEB", 100: "#FEF3C7" },
+            error: { DEFAULT: "#EF4444", 50: "#FEF2F2", 100: "#FEE2E2" },
+            border: { DEFAULT: "#E5E7EB", focus: "#2563EB" },
+          },
+          fontFamily: {
+            sans: ['Source Sans Pro', 'sans-serif'],
+            heading: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+    </script>
 </head>
-<body class="bg-white">
+<body class="bg-background text-text-primary">
 
-    <!-- We will add the Header here in a future step -->
+    {% include header.html %}
 
     <main>
         {{ content }}
     </main>
 
-    <!-- We will add the Footer here in a future step -->
+    {% include footer.html %}
 
 </body>
 </html>
