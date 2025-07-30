@@ -1,17 +1,17 @@
-# /admin/config.yml (Corrected .com domain)
+# /admin/config.yml (Definitive Final Version)
 
 backend:
   name: github
-  repo: septicsense/Septic-Sense # Your username and repo
-  branch: main # The branch to publish to
-  base_url: https://api.decapcms.com # CORRECTED from .org to .com
-  auth_endpoint: auth # Specifies the path for authentication on the gateway
+  repo: septicsense/Septic-Sense
+  branch: main
+  base_url: https://api.decapcms.org  # This now correctly matches the GitHub App setting
+  auth_endpoint: auth
 
-# This is where all media files will be stored
+# Media files
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
-# This defines your content types
+# Content collections
 collections:
   - name: "posts"
     label: "Blog Posts"
