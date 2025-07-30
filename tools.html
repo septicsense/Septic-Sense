@@ -1,0 +1,86 @@
+---
+# /tools.html
+layout: default
+title: Professional Septic Tools & Calculators
+description: Access 10 interactive calculators and utilities designed for homeowners, professionals, and RV owners to manage their septic systems effectively.
+---
+
+<div class="bg-white">
+  <!-- Page Header -->
+  <div class="container mx-auto px-4 pt-12 pb-8 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold font-heading text-text-primary">Professional Septic Tools & Calculators</h1>
+    <p class="mt-4 text-lg text-text-secondary max-w-3xl mx-auto">Access 10 interactive calculators and utilities designed for homeowners and RV owners. Get accurate estimates and expert guidance.</p>
+  </div>
+
+  <!-- Search and Filter Bar -->
+  <div class="container mx-auto px-4 pb-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Search Input -->
+        <div class="relative">
+            <input type="search" placeholder="Search tools and calculators..." class="w-full p-4 pl-12 text-lg border-2 border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-100 focus:border-primary">
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                <svg class="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+        </div>
+        <!-- Filter Tabs -->
+        <div class="mt-6 flex flex-wrap justify-center gap-2 md:gap-4">
+            <a href="#" class="px-5 py-2 text-sm font-bold bg-primary text-white rounded-full shadow">All Tools</a>
+            <a href="#" class="px-5 py-2 text-sm font-bold bg-surface text-text-secondary border border-border rounded-full hover:bg-gray-100">Homeowners</a>
+            <a href="#" class="px-5 py-2 text-sm font-bold bg-surface text-text-secondary border border-border rounded-full hover:bg-gray-100">RV Owners</a>
+            <a href="#" class="px-5 py-2 text-sm font-bold bg-surface text-text-secondary border border-border rounded-full hover:bg-gray-100">Professionals</a>
+            <a href="#" class="px-5 py-2 text-sm font-bold bg-surface text-text-secondary border border-border rounded-full hover:bg-gray-100">Emergency</a>
+        </div>
+    </div>
+  </div>
+
+  <!-- Tools Grid -->
+  <div class="container mx-auto px-4 pb-16 sm:pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Tool Card 1: Cost Calculator -->
+      <div class="bg-surface p-6 rounded-lg border border-border shadow-card hover:shadow-card-elevated transition-shadow flex flex-col">
+        <div class="flex-grow">
+          <img src="{{ '/assets/images/interactive-tools-icon.png' | relative_url }}" class="h-10 w-10 mb-4" alt="Calculator Icon">
+          <h3 class="font-heading text-xl font-bold text-text-primary">Septic System Cost Calculator</h3>
+          <p class="mt-2 text-text-secondary">Estimate installation, repair, and maintenance costs for your septic system based on your property details.</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-border">
+          <span class="inline-block bg-primary-50 text-primary-700 text-xs font-bold mr-2 px-2.5 py-1 rounded-full">Easy</span>
+          <span class="inline-block bg-gray-100 text-gray-600 text-xs font-bold mr-2 px-2.5 py-1 rounded-full">2 min</span>
+          <a href="#" class="mt-4 block w-full text-center px-6 py-3 bg-primary text-white font-bold rounded-lg shadow-md hover:bg-primary-700 transition duration-150">Use Calculator</a>
+        </div>
+      </div>
+
+      <!-- Tool Card 2: Capacity Calculator -->
+      <div class="bg-surface p-6 rounded-lg border border-border shadow-card hover:shadow-card-elevated transition-shadow flex flex-col">
+        <div class="flex-grow">
+            <img src="{{ '/assets/images/interactive-tools-icon.png' | relative_url }}" class="h-10 w-10 mb-4" alt="Tank Icon">
+          <h3 class="font-heading text-xl font-bold text-text-primary">Tank Capacity Calculator</h3>
+          <p class="mt-2 text-text-secondary">Determine optimal septic tank size based on household usage and local regulations for efficiency.</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-border">
+          <span class="inline-block bg-secondary-50 text-secondary-700 text-xs font-bold mr-2 px-2.5 py-1 rounded-full">Easy</span>
+          <span class="inline-block bg-gray-100 text-gray-600 text-xs font-bold mr-2 px-2.5 py-1 rounded-full">2 min</span>
+          <a href="#" class="mt-4 block w-full text-center px-6 py-3 bg-secondary text-white font-bold rounded-lg shadow-md hover:bg-secondary-700 transition duration-150">Calculate Capacity</a>
+        </div>
+      </div>
+      
+      <!-- Tool Card 3: RV Dump Station Directory -->
+      <div class="bg-surface p-6 rounded-lg border border-border shadow-card hover:shadow-card-elevated transition-shadow flex flex-col">
+        <div class="flex-grow">
+            <img src="{{ '/assets/images/interactive-tools-icon.png' | relative_url }}" class="h-10 w-10 mb-4" alt="Map Pin Icon">
+          <h3 class="font-heading text-xl font-bold text-text-primary">RV Dump Station Directory</h3>
+          <p class="mt-2 text-text-secondary">Find nearby RV dump stations with real-time availability, pricing, and user reviews.</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-border">
+          <span class="inline-block bg-accent-50 text-accent-700 text-xs font-bold mr-2 px-2.5 py-1 rounded-full">Urgent</span>
+          <span class="inline-block bg-gray-100 text-gray-600 text-xs font-bold mr-2 px-2.5 py-1 rounded-full">1 min</span>
+          <a href="#" class="mt-4 block w-full text-center px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-md hover:bg-accent-700 transition duration-150">Find Stations</a>
+        </div>
+      </div>
+
+      <!-- Add more tool cards as needed following the pattern above -->
+
+    </div>
+  </div>
+</div>
