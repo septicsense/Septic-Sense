@@ -1,11 +1,9 @@
-# /admin/config.yml
+# /admin/config.yml (SIMPLEST CORRECT VERSION)
 
 backend:
   name: github
   repo: septicsense/Septic-Sense
   branch: main
-  base_url: https://api.decapcms.org
-  auth_endpoint: auth
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
