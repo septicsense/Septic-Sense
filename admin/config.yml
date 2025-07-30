@@ -1,19 +1,15 @@
-# /admin/config.yml (Final Definitive Version)
+# /admin/config.yml
 
 backend:
   name: github
   repo: septicsense/Septic-Sense
   branch: main
-  # This base_url MUST match the "Authorization callback URL" in the GitHub App.
-  # The correct, official address is .org.
   base_url: https://api.decapcms.org
   auth_endpoint: auth
 
-# Media files
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
-# Content collections
 collections:
   - name: "posts"
     label: "Blog Posts"
