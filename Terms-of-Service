@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - SepticSense</title>
+    <meta name="description" content="Please read the Terms of Service for SepticSense, which govern your use of our website, tools, and services." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="canonical" href="https://septicsense.com/terms-of-service" />
+    <meta property="og:title" content="Terms of Service - SepticSense" />
+    <meta property="og:description" content="Understand the rules and guidelines for using the SepticSense website and its resources." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://septicsense.com/terms-of-service" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsepticsens9426back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-surface shadow-card border-b border-border">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            <path d="M8 12l2 2 4-4" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-heading font-bold text-primary">SepticSense</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="tools_page.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Tools</a>
+                        <a href="septic_care_guides.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Care Guides</a>
+                        <a href="blog_system.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Blog</a>
+                        <a href="contact_about.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Contact</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">About Us</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                    <a href="tools_page.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Tools</a>
+                    <a href="septic_care_guides.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Care Guides</a>
+                    <a href="blog_system.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Blog</a>
+                    <a href="contact_about.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Contact</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bg-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center mb-10">
+                <h1 class="text-4xl md:text-5xl font-heading font-bold text-text-primary">Terms of Service</h1>
+                <p class="mt-4 text-lg text-text-secondary">Last Updated: August 7, 2025</p>
+            </div>
+
+            <div class="prose prose-lg max-w-none text-text-secondary">
+                <h2 class="text-text-primary">1. Agreement to Terms</h2>
+                <p>By accessing or using the SepticSense website (the "Site"), including its content, tools, and any services offered, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use the Site.</p>
+
+                <h2 class="text-text-primary">2. Intellectual Property Rights</h2>
+                <p>Unless otherwise indicated, the Site is our proprietary property. All source code, databases, functionality, software, website designs, text, photographs, and graphics on the Site (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks") are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws. The Content and the Marks are provided on the Site "AS IS" for your information and personal use only. No part of the Site and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+
+                <h2 class="text-text-primary">3. User Representations</h2>
+                <p>By using the Site, you represent and warrant that: (1) you have the legal capacity and you agree to comply with these Terms of Service; (2) you will not use the Site for any illegal or unauthorized purpose; and (3) your use of the Site will not violate any applicable law or regulation.</p>
+                
+                <h2 class="text-text-primary">4. Use of Website Content and Tools</h2>
+                <p>The information provided on SepticSense, including blog articles, care guides, and the results from our online tools (such as cost calculators, capacity calculators, etc.), is for informational and educational purposes only.</p>
+                <ul>
+                    <li><strong>No Professional Advice:</strong> The Content does not constitute professional engineering, financial, or legal advice. You should consult with a qualified professional for advice tailored to your specific situation.</li>
+                    <li><strong>Tools and Calculators:</strong> Our online tools provide estimates based on the data you input. These estimates are not guaranteed quotes or precise calculations. Actual costs, system requirements, and other factors can only be determined by a professional on-site inspection.</li>
+                </ul>
+                <p>Reliance on any information provided by this Site is solely at your own risk.</p>
+
+                <h2 class="text-text-primary">5. Third-Party Service Providers</h2>
+                <p>SepticSense acts as a facilitator to connect users with independent, third-party septic service professionals and contractors ("Service Providers"). When you request emergency service or a consultation, we may forward your request to a Service Provider in your area.</p>
+                <ul>
+                    <li>You acknowledge that Service Providers are independent contractors and not employees or agents of SepticSense.</li>
+                    <li>We do not perform the physical septic services and are not responsible for the work, conduct, quality, or pricing of any Service Provider.</li>
+                    <li>Any agreement for services is strictly between you and the Service Provider. We encourage you to perform your own due diligence before hiring any Service Provider.</li>
+                </ul>
+
+                <h2 class="text-text-primary">6. Prohibited Activities</h2>
+                <p>You may not access or use the Site for any purpose other than that for which we make the Site available. You agree not to:</p>
+                <ul>
+                    <li>Systematically retrieve data or other content from the Site to create a collection, compilation, database, or directory without written permission from us.</li>
+                    <li>Use the Site to advertise or offer to sell goods and services not related to our core business.</li>
+                    <li>Interfere with, disrupt, or create an undue burden on the Site or the networks or services connected to the Site.</li>
+                    <li>Attempt to impersonate another user or person.</li>
+                    <li>Use any information obtained from the Site in order to harass, abuse, or harm another person.</li>
+                </ul>
+
+                <h2 class="text-text-primary">7. Site Management</h2>
+                <p>We reserve the right, but not the obligation, to: (1) monitor the Site for violations of these Terms of Service; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms; (3) in our sole discretion and without limitation, refuse, restrict access to, or disable any of your contributions; and (4) otherwise manage the Site in a manner designed to protect our rights and property and to facilitate the proper functioning of the Site.</p>
+
+                <h2 class="text-text-primary">8. Modifications and Interruptions</h2>
+                <p>We reserve the right to change, modify, or remove the contents of the Site at any time or for any reason at our sole discretion without notice. We also reserve the right to modify or discontinue all or part of the Site without notice at any time. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Site.</p>
+                
+                <h2 class="text-text-primary">9. Governing Law</h2>
+                <p>These Terms of Service and your use of the Site are governed by and construed in accordance with the laws of the State of Texas, United States, applicable to agreements made and to be entirely performed within the State of Texas, without regard to its conflict of law principles.</p>
+                
+                <h2 class="text-text-primary">10. Disclaimer</h2>
+                <p>THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE’S CONTENT OR THE CONTENT OF ANY WEBSITES LINKED TO THE SITE.</p>
+                
+                <h2 class="text-text-primary">11. Limitation of Liability</h2>
+                <p>IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US.</p>
+
+                <h2 class="text-text-primary">12. Indemnification</h2>
+                <p>You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) your use of the Site; (2) your breach of these Terms of Service; or (3) your violation of the rights of a third party, including but not limited to intellectual property rights.</p>
+
+                <h2 class="text-text-primary">13. Contact Us</h2>
+                <p>To resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:support@septicsense.com" class="text-primary hover:underline">support@septicsense.com</a></p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            <path d="M8 12l2 2 4-4" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-heading font-bold">SepticSense</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Professional septic system maintenance tools and expert guidance for homeowners and RV owners.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-heading font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact_about.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="blog_system.html" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Join Our Community -->
+                <div>
+                    <h4 class="text-lg font-heading font-semibold mb-4">Join Our Community</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Facebook</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">YouTube</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Pinterest</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- Affiliate Disclosure -->
+                <div>
+                    <h4 class="text-lg font-heading font-semibold mb-4">Affiliate Disclosure</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p class="text-sm">We may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. This helps support our work.</p>
+                        <p class="text-sm pt-2">&copy; 2025 SepticSense. All Rights Reserved.</p>
+                        <p class="text-sm"><a href="privacy-policy.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a> | <a href="terms-of-service.html" class="text-white font-semibold hover:underline">Terms of Service</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
