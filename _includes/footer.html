@@ -1,25 +1,33 @@
-<!-- /_includes/footer.html (Corrected Version) -->
+<!-- /_includes/footer.html (Final Version) -->
 <footer class="bg-gray-900 text-gray-300 font-sans">
     <div class="container mx-auto px-4 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
             <!-- Column 1: Brand Info -->
-            <div class="space-y-4">
+            <div class="md:col-span-1 space-y-4">
                 <a href="{{ site.baseurl }}/" class="flex items-center space-x-2">
-                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Septic Sense Logo" class="h-8 w-auto bg-white p-1 rounded">
+                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="SepticSense Logo" class="h-10 w-10 bg-white p-1 rounded-md">
                     <span class="text-xl font-heading font-bold text-white">SepticSense</span>
                 </a>
                 <p class="text-gray-400">
                     Professional septic system maintenance tools and expert guidance for homeowners and RV owners.
                 </p>
                 <div class="flex space-x-4 pt-2">
-                    <a href="#" class="text-gray-400 hover:text-white"><span class="sr-only">Twitter</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><span class="sr-only">LinkedIn</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+                    <a href="https://x.com/SepticSense" aria-label="Twitter" class="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
             <!-- Column 2: Quick Links -->
-            <div>
+            <div class="md:col-span-1">
                 <h3 class="text-lg font-semibold font-heading text-white">Quick Links</h3>
                 <ul class="mt-4 space-y-3">
                     <li><a href="{{ site.baseurl }}/" class="hover:text-white hover:underline">Home</a></li>
@@ -30,42 +38,36 @@
                 </ul>
             </div>
 
-            <!-- Column 3: Resources -->
-            <div>
-                <h3 class="text-lg font-semibold font-heading text-white">Resources</h3>
+            <!-- Column 3: Join Our Community -->
+            <div class="md:col-span-1">
+                <h3 class="text-lg font-semibold font-heading text-white">Join Our Community</h3>
                 <ul class="mt-4 space-y-3">
-                    <li><a href="#" class="hover:text-white hover:underline">Cost Calculator</a></li>
-                    <li><a href="#" class="hover:text-white hover:underline">RV Tools</a></li>
-                    <li><a href="#" class="hover:text-white hover:underline">DIY Guides</a></li>
-                    <li><a href="#" class="hover:text-white hover:underline">Emergency Help</a></li>
-                    <li><a href="#" class="hover:text-white hover:underline">Admin Panel</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61565097749573" class="hover:text-white hover:underline" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@SepticSense" class="hover:text-white hover:underline" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    <li><a href="https://www.pinterest.com/SepticSense_Solutions/" class="hover:text-white hover:underline" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                    <li><a href="https://x.com/SepticSense" class="hover:text-white hover:underline" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="#" class="hover:text-white hover:underline">Instagram</a></li>
                 </ul>
             </div>
 
-            <!-- Column 4: Contact Info -->
-            <div>
-                <h3 class="text-lg font-semibold font-heading text-white">Contact Info</h3>
-                <ul class="mt-4 space-y-4">
-                    <li class="flex items-start">
-                        <span class="text-primary pt-1 mr-3">✉</span>
-                        <a href="mailto:support@septicsense.com" class="hover:text-white">support@septicsense.com</a>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent pt-1 mr-3">☎</span>
-                        <a href="tel:1-800-SEPTIC-1" class="hover:text-white">1-800-SEPTIC-1</a>
-                    </li>
-                    <li class="flex items-start">
-                         <span class="text-gray-400 pt-1 mr-3">▴</span>
-                        <span>Serving USA, Canada & Europe</span>
-                    </li>
-                </ul>
+            <!-- Column 4: Affiliate Disclosure -->
+            <div class="md:col-span-1">
+                <h3 class="text-lg font-semibold font-heading text-white">Affiliate Disclosure</h3>
+                <p class="mt-4 text-gray-400">
+                    We may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. This helps support our work.
+                </p>
             </div>
 
         </div>
 
         <!-- Bottom Bar -->
-        <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500">
-            <p>© 2025 SepticSense. All Rights Reserved. | <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a></p>
+        <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>© 2025 SepticSense. All Rights Reserved.</p>
+            <p class="mt-2">
+                <a href="#" class="hover:text-white hover:underline">Privacy Policy</a>
+                <span class="mx-2">|</span>
+                <a href="#" class="hover:text-white hover:underline">Terms of Service</a>
+            </p>
         </div>
     </div>
 </footer>
