@@ -9,7 +9,7 @@ title: Care Guides
         <nav class="flex" aria-label="Breadcrumb">
             <ol class="flex items-center space-x-2">
                 <li>
-                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">
+                    <a href="{{ '/homepage.html' | relative_url }}" class="text-text-secondary hover:text-primary transition-colors">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
                         </svg>
@@ -43,21 +43,15 @@ title: Care Guides
             <!-- Trust Badges -->
             <div class="flex flex-wrap justify-center items-center gap-8 mb-8">
                 <div class="flex items-center space-x-2">
-                    <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
+                    <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     <span class="text-text-secondary font-semibold">EPA Certified Content</span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
+                    <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     <span class="text-text-secondary font-semibold">25,000+ Downloads</span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
+                    <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                     <span class="text-text-secondary font-semibold">15+ Years Experience</span>
                 </div>
             </div>
@@ -86,32 +80,11 @@ title: Care Guides
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap gap-4 items-center justify-between">
             <div class="flex flex-wrap gap-4">
-                <select id="property-filter" class="px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none">
-                    <option value>All Property Types</option>
-                    <option value="residential">Residential</option>
-                    <option value="rv">RV/Mobile</option>
-                    <option value="small-property">Small Property</option>
-                    <option value="commercial">Commercial</option>
-                </select>
-                
-                <select id="skill-filter" class="px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none">
-                    <option value>All Skill Levels</option>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
-                </select>
-                
-                <select id="length-filter" class="px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none">
-                    <option value>All Lengths</option>
-                    <option value="short">Short (1-20 pages)</option>
-                    <option value="medium">Medium (21-50 pages)</option>
-                    <option value="long">Long (50+ pages)</option>
-                </select>
+                <select id="property-filter" class="px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none"><option value>All Property Types</option><option value="residential">Residential</option><option value="rv">RV/Mobile</option><option value="small-property">Small Property</option><option value="commercial">Commercial</option></select>
+                <select id="skill-filter" class="px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none"><option value>All Skill Levels</option><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select>
+                <select id="length-filter" class="px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none"><option value>All Lengths</option><option value="short">Short (1-20 pages)</option><option value="medium">Medium (21-50 pages)</option><option value="long">Long (50+ pages)</option></select>
             </div>
-            
-            <button id="reset-filters" class="text-primary hover:text-primary-700 font-semibold transition-colors">
-                Reset Filters
-            </button>
+            <button id="reset-filters" class="text-primary hover:text-primary-700 font-semibold transition-colors">Reset Filters</button>
         </div>
     </div>
 </section>
@@ -120,243 +93,131 @@ title: Care Guides
 <section class="py-16 bg-background">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">
-                Complete Guide Library
-            </h2>
-            <p class="text-xl text-text-secondary">
-                Professional-grade resources for every septic system challenge
-            </p>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">Complete Guide Library</h2>
+            <p class="text-xl text-text-secondary">Professional-grade resources for every septic system challenge</p>
         </div>
-
         <div id="guides-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Guide 1: DIY Repair Manual -->
             <div class="guide-card bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale" data-property="residential" data-skill="intermediate" data-length="long">
                 <div class="relative">
-                    <img src="{{ '/assets/images/guide-diy-repair.jpeg' | relative_url }}" alt="DIY Septic Repair Manual cover" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
-                    <div class="absolute top-4 left-4">
-                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Featured</span>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">68 Pages</span>
-                    </div>
+                    <img src="{{ site.baseurl }}/assets/images/guide-diy-repair.jpeg" alt="DIY Septic Repair Manual cover" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
+                    <div class="absolute top-4 left-4"><span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Featured</span></div>
+                    <div class="absolute top-4 right-4"><span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">68 Pages</span></div>
                 </div>
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-heading font-semibold text-text-primary">DIY Septic Repair Techniques Manual</h3>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 text-warning mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            <span class="text-sm text-text-secondary">Intermediate</span>
-                        </div>
+                        <div class="flex items-center"><svg class="w-4 h-4 text-warning mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-sm text-text-secondary">Intermediate</span></div>
                     </div>
-                    <p class="text-text-secondary mb-4">
-                        Complete step-by-step guide for common septic repairs including pipe fixes, baffle replacement, and pump maintenance. Save $2,000-$5,000 on professional repairs.
-                    </p>
-                    <div class="mb-4">
-                        <p class="text-sm text-text-secondary italic">
-                            "Fixed my septic baffle in 3 hours instead of paying $1,800 for a contractor..." - Preview
-                        </p>
-                    </div>
+                    <p class="text-text-secondary mb-4">Complete step-by-step guide for common septic repairs including pipe fixes, baffle replacement, and pump maintenance. Save $2,000-$5,000 on professional repairs.</p>
+                    <div class="mb-4"><p class="text-sm text-text-secondary italic">"Fixed my septic baffle in 3 hours instead of paying $1,800 for a contractor..." - Preview</p></div>
                     <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-4">
-                            <span class="text-sm text-text-secondary">📄 68 pages</span>
-                            <span class="text-sm text-text-secondary">⭐ 4.9/5</span>
-                        </div>
+                        <div class="flex items-center space-x-4"><span class="text-sm text-text-secondary">📄 68 pages</span><span class="text-sm text-text-secondary">⭐ 4.9/5</span></div>
                         <span class="text-lg font-heading font-bold text-primary">$29.99</span>
                     </div>
-                    <button class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="diy-repair">
-                        Download Guide
-                    </button>
+                    <button class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="diy-repair">Download Guide</button>
                 </div>
             </div>
-
             <!-- Guide 2: Small Property Solutions -->
             <div class="guide-card bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale" data-property="small-property" data-skill="beginner" data-length="medium">
                 <div class="relative">
-                    <img src="{{ '/assets/images/guide-small-property.jpg' | relative_url }}" alt="Small Property Septic Solutions guide" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
-                    <div class="absolute top-4 right-4">
-                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">42 Pages</span>
-                    </div>
+                    <img src="{{ site.baseurl }}/assets/images/guide-small-property.jpg" alt="Small Property Septic Solutions guide" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
+                    <div class="absolute top-4 right-4"><span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">42 Pages</span></div>
                 </div>
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-heading font-semibold text-text-primary">Small Property Septic Solutions Guide</h3>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            <span class="text-sm text-text-secondary">Beginner</span>
-                        </div>
+                        <div class="flex items-center"><svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-sm text-text-secondary">Beginner</span></div>
                     </div>
-                    <p class="text-text-secondary mb-4">
-                        Perfect for tiny homes, cabins, and small properties. Learn about compact septic systems, alternative solutions, and space-efficient maintenance strategies.
-                    </p>
-                    <div class="mb-4">
-                        <p class="text-sm text-text-secondary italic">
-                            "Ideal for our 800 sq ft cabin. The compact system recommendations were perfect..." - Preview
-                        </p>
-                    </div>
+                    <p class="text-text-secondary mb-4">Perfect for tiny homes, cabins, and small properties. Learn about compact septic systems, alternative solutions, and space-efficient maintenance strategies.</p>
+                    <div class="mb-4"><p class="text-sm text-text-secondary italic">"Ideal for our 800 sq ft cabin. The compact system recommendations were perfect..." - Preview</p></div>
                     <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-4">
-                            <span class="text-sm text-text-secondary">📄 42 pages</span>
-                            <span class="text-sm text-text-secondary">⭐ 4.8/5</span>
-                        </div>
+                        <div class="flex items-center space-x-4"><span class="text-sm text-text-secondary">📄 42 pages</span><span class="text-sm text-text-secondary">⭐ 4.8/5</span></div>
                         <span class="text-lg font-heading font-bold text-secondary">$19.99</span>
                     </div>
-                    <button class="w-full bg-secondary hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="small-property">
-                        Download Guide
-                    </button>
+                    <button class="w-full bg-secondary hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="small-property">Download Guide</button>
                 </div>
             </div>
-
             <!-- Guide 3: RV Maintenance Handbook -->
             <div class="guide-card bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale" data-property="rv" data-skill="beginner" data-length="medium">
                 <div class="relative">
-                    <img src="{{ '/assets/images/guide-rv-maintenance.jpg' | relative_url }}" alt="RV Septic System Maintenance Handbook" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
-                    <div class="absolute top-4 left-4">
-                        <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Popular</span>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">35 Pages</span>
-                    </div>
+                    <img src="{{ site.baseurl }}/assets/images/guide-rv-maintenance.jpg" alt="RV Septic System Maintenance Handbook" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
+                    <div class="absolute top-4 left-4"><span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Popular</span></div>
+                    <div class="absolute top-4 right-4"><span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">35 Pages</span></div>
                 </div>
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-heading font-semibold text-text-primary">RV Septic System Maintenance Handbook</h3>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            <span class="text-sm text-text-secondary">Beginner</span>
-                        </div>
+                        <div class="flex items-center"><svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-sm text-text-secondary">Beginner</span></div>
                     </div>
-                    <p class="text-text-secondary mb-4">
-                        Essential guide for RV owners covering dump station etiquette, tank cleaning, troubleshooting, and mobile septic system maintenance on the road.
-                    </p>
-                    <div class="mb-4">
-                        <p class="text-sm text-text-secondary italic">
-                            "Saved our vacation! The troubleshooting section helped us fix a clog in minutes..." - Preview
-                        </p>
-                    </div>
+                    <p class="text-text-secondary mb-4">Essential guide for RV owners covering dump station etiquette, tank cleaning, troubleshooting, and mobile septic system maintenance on the road.</p>
+                    <div class="mb-4"><p class="text-sm text-text-secondary italic">"Saved our vacation! The troubleshooting section helped us fix a clog in minutes..." - Preview</p></div>
                     <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-4">
-                            <span class="text-sm text-text-secondary">📄 35 pages</span>
-                            <span class="text-sm text-text-secondary">⭐ 4.9/5</span>
-                        </div>
+                        <div class="flex items-center space-x-4"><span class="text-sm text-text-secondary">📄 35 pages</span><span class="text-sm text-text-secondary">⭐ 4.9/5</span></div>
                         <span class="text-lg font-heading font-bold text-accent">$24.99</span>
                     </div>
-                    <button class="w-full bg-accent hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="rv-maintenance">
-                        Download Guide
-                    </button>
+                    <button class="w-full bg-accent hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="rv-maintenance">Download Guide</button>
                 </div>
             </div>
-
             <!-- Guide 4: Septic-Safe Landscaping -->
             <div class="guide-card bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale" data-property="residential" data-skill="beginner" data-length="short">
                 <div class="relative">
-                    <img src="{{ '/assets/images/guide-landscaping.jpeg' | relative_url }}" alt="Septic-Safe Landscaping Planner" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
-                    <div class="absolute top-4 right-4">
-                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">18 Pages</span>
-                    </div>
+                    <img src="{{ site.baseurl }}/assets/images/guide-landscaping.jpeg" alt="Septic-Safe Landscaping Planner" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
+                    <div class="absolute top-4 right-4"><span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">18 Pages</span></div>
                 </div>
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-heading font-semibold text-text-primary">Septic-Safe Landscaping Planner</h3>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            <span class="text-sm text-text-secondary">Beginner</span>
-                        </div>
+                        <div class="flex items-center"><svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-sm text-text-secondary">Beginner</span></div>
                     </div>
-                    <p class="text-text-secondary mb-4">
-                        Design beautiful landscapes that protect your septic system. Learn about safe plants, proper drainage, and landscaping techniques that enhance system performance.
-                    </p>
-                    <div class="mb-4">
-                        <p class="text-sm text-text-secondary italic">
-                            "Beautiful garden design that actually helps our septic system work better..." - Preview
-                        </p>
-                    </div>
+                    <p class="text-text-secondary mb-4">Design beautiful landscapes that protect your septic system. Learn about safe plants, proper drainage, and landscaping techniques that enhance system performance.</p>
+                    <div class="mb-4"><p class="text-sm text-text-secondary italic">"Beautiful garden design that actually helps our septic system work better..." - Preview</p></div>
                     <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-4">
-                            <span class="text-sm text-text-secondary">📄 18 pages</span>
-                            <span class="text-sm text-text-secondary">⭐ 4.7/5</span>
-                        </div>
+                        <div class="flex items-center space-x-4"><span class="text-sm text-text-secondary">📄 18 pages</span><span class="text-sm text-text-secondary">⭐ 4.7/5</span></div>
                         <span class="text-lg font-heading font-bold text-primary">$14.99</span>
                     </div>
-                    <button class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="landscaping">
-                        Download Guide
-                    </button>
+                    <button class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="landscaping">Download Guide</button>
                 </div>
             </div>
-
             <!-- Guide 5: Permit & Inspection Prep -->
             <div class="guide-card bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale" data-property="residential" data-skill="intermediate" data-length="medium">
                 <div class="relative">
-                    <img src="{{ '/assets/images/guide-permit-inspection.jpg' | relative_url }}" alt="Septic System Permit & Inspection Prep Kit" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
-                    <div class="absolute top-4 right-4">
-                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">31 Pages</span>
-                    </div>
+                    <img src="{{ site.baseurl }}/assets/images/guide-permit-inspection.jpg" alt="Septic System Permit & Inspection Prep Kit" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
+                    <div class="absolute top-4 right-4"><span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">31 Pages</span></div>
                 </div>
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-heading font-semibold text-text-primary">Septic System Permit & Inspection Prep Kit</h3>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 text-warning mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            <span class="text-sm text-text-secondary">Intermediate</span>
-                        </div>
+                        <div class="flex items-center"><svg class="w-4 h-4 text-warning mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-sm text-text-secondary">Intermediate</span></div>
                     </div>
-                    <p class="text-text-secondary mb-4">
-                        Navigate permits and inspections with confidence. Includes checklists, forms, and preparation strategies to pass inspections on the first try.
-                    </p>
-                    <div class="mb-4">
-                        <p class="text-sm text-text-secondary italic">
-                            "Passed our inspection without any issues thanks to the detailed checklist..." - Preview
-                        </p>
-                    </div>
+                    <p class="text-text-secondary mb-4">Navigate permits and inspections with confidence. Includes checklists, forms, and preparation strategies to pass inspections on the first try.</p>
+                    <div class="mb-4"><p class="text-sm text-text-secondary italic">"Passed our inspection without any issues thanks to the detailed checklist..." - Preview</p></div>
                     <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-4">
-                            <span class="text-sm text-text-secondary">📄 31 pages</span>
-                            <span class="text-sm text-text-secondary">⭐ 4.8/5</span>
-                        </div>
+                        <div class="flex items-center space-x-4"><span class="text-sm text-text-secondary">📄 31 pages</span><span class="text-sm text-text-secondary">⭐ 4.8/5</span></div>
                         <span class="text-lg font-heading font-bold text-secondary">$22.99</span>
                     </div>
-                    <button class="w-full bg-secondary hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="permit-prep">
-                        Download Guide
-                    </button>
+                    <button class="w-full bg-secondary hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="permit-prep">Download Guide</button>
                 </div>
             </div>
-
             <!-- Guide 6: New Homeowner Starter Kit -->
             <div class="guide-card bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale" data-property="residential" data-skill="beginner" data-length="medium">
                 <div class="relative">
-                    <img src="{{ '/assets/images/guide-new-homeowner.jpg' | relative_url }}" alt="New Homeowner's Septic System Starter Kit" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
-                    <div class="absolute top-4 left-4">
-                        <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Bestseller</span>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">45 Pages</span>
-                    </div>
+                    <img src="{{ site.baseurl }}/assets/images/guide-new-homeowner.jpg" alt="New Homeowner's Septic System Starter Kit" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
+                    <div class="absolute top-4 left-4"><span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Bestseller</span></div>
+                    <div class="absolute top-4 right-4"><span class="bg-surface text-text-primary px-2 py-1 rounded text-sm font-semibold">45 Pages</span></div>
                 </div>
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-heading font-semibold text-text-primary">New Homeowner's Septic System Starter Kit</h3>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            <span class="text-sm text-text-secondary">Beginner</span>
-                        </div>
+                        <div class="flex items-center"><svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-sm text-text-secondary">Beginner</span></div>
                     </div>
-                    <p class="text-text-secondary mb-4">
-                        Everything new homeowners need to know about septic systems. From basic operation to maintenance schedules, this guide prevents costly mistakes.
-                    </p>
-                    <div class="mb-4">
-                        <p class="text-sm text-text-secondary italic">
-                            "Wish I had this when we first bought our house. Would have saved us $2,000..." - Preview
-                        </p>
-                    </div>
+                    <p class="text-text-secondary mb-4">Everything new homeowners need to know about septic systems. From basic operation to maintenance schedules, this guide prevents costly mistakes.</p>
+                    <div class="mb-4"><p class="text-sm text-text-secondary italic">"Wish I had this when we first bought our house. Would have saved us $2,000..." - Preview</p></div>
                     <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-4">
-                            <span class="text-sm text-text-secondary">📄 45 pages</span>
-                            <span class="text-sm text-text-secondary">⭐ 4.9/5</span>
-                        </div>
+                        <div class="flex items-center space-x-4"><span class="text-sm text-text-secondary">📄 45 pages</span><span class="text-sm text-text-secondary">⭐ 4.9/5</span></div>
                         <span class="text-lg font-heading font-bold text-accent">$27.99</span>
                     </div>
-                    <button class="w-full bg-accent hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="starter-kit">
-                        Download Guide
-                    </button>
+                    <button class="w-full bg-accent hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale download-btn" data-guide="starter-kit">Download Guide</button>
                 </div>
             </div>
         </div>
@@ -367,88 +228,46 @@ title: Care Guides
 <section class="py-16 bg-surface">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">
-                Recommended Products
-            </h2>
-            <p class="text-xl text-text-secondary">
-                Professional-grade tools and supplies recommended by septic experts
-            </p>
-            <p class="text-sm text-text-secondary mt-2">
-                <em>Disclosure: We may earn a commission from purchases made through these affiliate links at no extra cost to you.</em>
-            </p>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">Recommended Products</h2>
+            <p class="text-xl text-text-secondary">Professional-grade tools and supplies recommended by septic experts</p>
+            <p class="text-sm text-text-secondary mt-2"><em>Disclosure: We may earn a commission from purchases made through these affiliate links at no extra cost to you.</em></p>
         </div>
-
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Product 1 -->
             <div class="bg-background p-6 rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale">
-                <img src="{{ '/assets/images/product-inspection-kit.jpg' | relative_url }}" alt="Professional Septic Tank Pumping Kit" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
+                <img src="{{ site.baseurl }}/assets/images/product-inspection-kit.jpg" alt="Professional Septic Tank Pumping Kit" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
                 <div class="flex items-center mb-2">
-                    <div class="flex text-warning mr-2">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
+                    <div class="flex text-warning mr-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                     <span class="text-sm text-text-secondary">(4.8/5 - 342 reviews)</span>
                 </div>
                 <h3 class="text-lg font-heading font-semibold text-text-primary mb-2">Professional Septic Inspection Kit</h3>
                 <p class="text-text-secondary mb-4">Complete inspection tools including probe, flashlight, and measurement devices. Everything needed for thorough septic system assessment.</p>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="text-2xl font-heading font-bold text-primary">$89.99</span>
-                    <span class="text-sm text-text-secondary line-through">$129.99</span>
-                </div>
-                <a href="#" class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale block text-center">
-                    View on Amazon
-                </a>
+                <div class="flex items-center justify-between mb-4"><span class="text-2xl font-heading font-bold text-primary">$89.99</span><span class="text-sm text-text-secondary line-through">$129.99</span></div>
+                <a href="#" class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale block text-center">View on Amazon</a>
             </div>
-
             <!-- Product 2 -->
             <div class="bg-background p-6 rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale">
-                <img src="{{ '/assets/images/product-toilet-paper.jpg' | relative_url }}" alt="Septic-Safe Toilet Paper" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
+                <img src="{{ site.baseurl }}/assets/images/product-toilet-paper.jpg" alt="Septic-Safe Toilet Paper" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
                 <div class="flex items-center mb-2">
-                    <div class="flex text-warning mr-2">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
+                    <div class="flex text-warning mr-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                     <span class="text-sm text-text-secondary">(4.6/5 - 1,248 reviews)</span>
                 </div>
                 <h3 class="text-lg font-heading font-semibold text-text-primary mb-2">Septic-Safe Toilet Paper (24-Pack)</h3>
                 <p class="text-text-secondary mb-4">Biodegradable toilet paper designed specifically for septic systems. Dissolves quickly to prevent clogs and system damage.</p>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="text-2xl font-heading font-bold text-secondary">$34.99</span>
-                    <span class="text-sm text-success font-semibold">Free Shipping</span>
-                </div>
-                <a href="#" class="w-full bg-secondary hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale block text-center">
-                    View on Amazon
-                </a>
+                <div class="flex items-center justify-between mb-4"><span class="text-2xl font-heading font-bold text-secondary">$34.99</span><span class="text-sm text-success font-semibold">Free Shipping</span></div>
+                <a href="#" class="w-full bg-secondary hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale block text-center">View on Amazon</a>
             </div>
-
             <!-- Product 3 -->
             <div class="bg-background p-6 rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale">
-                <img src="{{ '/assets/images/product-septic-treatment.jpeg' | relative_url }}" alt="Septic System Treatment" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
+                <img src="{{ site.baseurl }}/assets/images/product-septic-treatment.jpeg" alt="Septic System Treatment" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
                 <div class="flex items-center mb-2">
-                    <div class="flex text-warning mr-2">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
+                    <div class="flex text-warning mr-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                     <span class="text-sm text-text-secondary">(4.9/5 - 856 reviews)</span>
                 </div>
                 <h3 class="text-lg font-heading font-semibold text-text-primary mb-2">Monthly Septic Treatment (12-Month Supply)</h3>
                 <p class="text-text-secondary mb-4">Natural bacterial treatment that maintains healthy septic system balance. Prevents odors and extends system life.</p>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="text-2xl font-heading font-bold text-accent">$49.99</span>
-                    <span class="text-sm text-accent font-semibold">Best Value</span>
-                </div>
-                <a href="#" class="w-full bg-accent hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale block text-center">
-                    View on Amazon
-                </a>
+                <div class="flex items-center justify-between mb-4"><span class="text-2xl font-heading font-bold text-accent">$49.99</span><span class="text-sm text-accent font-semibold">Best Value</span></div>
+                <a href="#" class="w-full bg-accent hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale block text-center">View on Amazon</a>
             </div>
         </div>
     </div>
@@ -458,75 +277,38 @@ title: Care Guides
 <section class="py-16 bg-background">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">
-                Related Educational Content
-            </h2>
-            <p class="text-xl text-text-secondary">
-                Expand your septic system knowledge with our expert articles
-            </p>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">Related Educational Content</h2>
+            <p class="text-xl text-text-secondary">Expand your septic system knowledge with our expert articles</p>
         </div>
-
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Blog Post 1 -->
             <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale">
-                <img src="{{ '/assets/images/guide-small-property.jpg' | relative_url }}" alt="Common septic system mistakes" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
+                <img src="{{ site.baseurl }}/assets/images/guide-small-property.jpg" alt="Common septic system mistakes" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
                 <div class="p-6">
-                    <div class="flex items-center text-sm text-text-secondary mb-3">
-                        <span>January 18, 2025</span>
-                        <span class="mx-2">•</span>
-                        <span>8 min read</span>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                        10 Costly Septic System Mistakes Every Homeowner Makes
-                    </h3>
-                    <p class="text-text-secondary mb-4">
-                        Avoid these common mistakes that can cost thousands in repairs. Learn from the experiences of other homeowners.
-                    </p>
-                    <a href="blog_system.html" class="text-primary font-semibold hover:text-primary-700 transition-colors">
-                        Read Article →
-                    </a>
+                    <div class="flex items-center text-sm text-text-secondary mb-3"><span>January 18, 2025</span><span class="mx-2">•</span><span>8 min read</span></div>
+                    <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">10 Costly Septic System Mistakes Every Homeowner Makes</h3>
+                    <p class="text-text-secondary mb-4">Avoid these common mistakes that can cost thousands in repairs. Learn from the experiences of other homeowners.</p>
+                    <a href="{{ '/blog_system.html' | relative_url }}" class="text-primary font-semibold hover:text-primary-700 transition-colors">Read Article →</a>
                 </div>
             </article>
-
             <!-- Blog Post 2 -->
             <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale">
-                <img src="{{ '/assets/images/guide-rv-maintenance.jpg' | relative_url }}" alt="RV septic maintenance schedule" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
+                <img src="{{ site.baseurl }}/assets/images/guide-rv-maintenance.jpg" alt="RV septic maintenance schedule" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
                 <div class="p-6">
-                    <div class="flex items-center text-sm text-text-secondary mb-3">
-                        <span>January 16, 2025</span>
-                        <span class="mx-2">•</span>
-                        <span>6 min read</span>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                        RV Septic Maintenance: A Complete Seasonal Schedule
-                    </h3>
-                    <p class="text-text-secondary mb-4">
-                        Keep your RV septic system in perfect condition with our comprehensive seasonal maintenance schedule.
-                    </p>
-                    <a href="blog_system.html" class="text-secondary font-semibold hover:text-secondary-700 transition-colors">
-                        Read Article →
-                    </a>
+                    <div class="flex items-center text-sm text-text-secondary mb-3"><span>January 16, 2025</span><span class="mx-2">•</span><span>6 min read</span></div>
+                    <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">RV Septic Maintenance: A Complete Seasonal Schedule</h3>
+                    <p class="text-text-secondary mb-4">Keep your RV septic system in perfect condition with our comprehensive seasonal maintenance schedule.</p>
+                    <a href="{{ '/blog_system.html' | relative_url }}" class="text-secondary font-semibold hover:text-secondary-700 transition-colors">Read Article →</a>
                 </div>
             </article>
-
             <!-- Blog Post 3 -->
             <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale">
-                <img src="{{ '/assets/images/guide-landscaping.jpeg' | relative_url }}" alt="DIY septic repair success story" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ '/assets/images/fallback-image.jpg' | relative_url }}'; this.onerror=null;" />
+                <img src="{{ site.baseurl }}/assets/images/guide-landscaping.jpeg" alt="DIY septic repair success story" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" onerror="this.src='{{ site.baseurl }}/assets/images/fallback-image.jpg'; this.onerror=null;" />
                 <div class="p-6">
-                    <div class="flex items-center text-sm text-text-secondary mb-3">
-                        <span>January 14, 2025</span>
-                        <span class="mx-2">•</span>
-                        <span>5 min read</span>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                        Success Story: How Sarah Saved $4,000 on Septic Repairs
-                    </h3>
-                    <p class="text-text-secondary mb-4">
-                        Real homeowner story about successfully completing a major septic repair using our DIY guides.
-                    </p>
-                    <a href="blog_system.html" class="text-accent font-semibold hover:text-accent-700 transition-colors">
-                        Read Story →
-                    </a>
+                    <div class="flex items-center text-sm text-text-secondary mb-3"><span>January 14, 2025</span><span class="mx-2">•</span><span>5 min read</span></div>
+                    <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">Success Story: How Sarah Saved $4,000 on Septic Repairs</h3>
+                    <p class="text-text-secondary mb-4">Real homeowner story about successfully completing a major septic repair using our DIY guides.</p>
+                    <a href="{{ '/blog_system.html' | relative_url }}" class="text-accent font-semibold hover:text-accent-700 transition-colors">Read Story →</a>
                 </div>
             </article>
         </div>
@@ -537,60 +319,34 @@ title: Care Guides
 <section class="py-16 bg-surface">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">
-                Success Stories from Our Community
-            </h2>
-            <p class="text-xl text-text-secondary">
-                Real results from homeowners who used our guides
-            </p>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary mb-4">Success Stories from Our Community</h2>
+            <p class="text-xl text-text-secondary">Real results from homeowners who used our guides</p>
         </div>
-
         <div class="grid md:grid-cols-2 gap-8">
             <!-- Testimonial 1 -->
             <div class="bg-background p-8 rounded-lg shadow-card">
                 <div class="flex items-center mb-6">
-                    <div class="flex text-warning mr-4">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
+                    <div class="flex text-warning mr-4"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                     <span class="text-text-secondary font-semibold">Before & After Success</span>
                 </div>
-                <blockquote class="text-lg text-text-secondary mb-6 italic">
-                    "The DIY Repair Manual saved us $4,200! Our septic system was backing up every month, and contractors quoted us $5,000 for a new drain field. Following the guide's troubleshooting steps, we discovered it was just a clogged distribution box. Fixed it ourselves in one weekend!"
-                </blockquote>
+                <blockquote class="text-lg text-text-secondary mb-6 italic">"The DIY Repair Manual saved us $4,200! Our septic system was backing up every month, and contractors quoted us $5,000 for a new drain field. Following the guide's troubleshooting steps, we discovered it was just a clogged distribution box. Fixed it ourselves in one weekend!"</blockquote>
                 <div class="flex items-center">
-                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
-                        <span class="text-primary font-semibold">MR</span>
-                    </div>
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4"><span class="text-primary font-semibold">MR</span></div>
                     <div>
                         <p class="font-semibold text-text-primary">Mike & Rachel Thompson</p>
                         <p class="text-sm text-text-secondary">Homeowners, Oregon • Project: Drain Field Repair</p>
                     </div>
                 </div>
             </div>
-
             <!-- Testimonial 2 -->
             <div class="bg-background p-8 rounded-lg shadow-card">
                 <div class="flex items-center mb-6">
-                    <div class="flex text-warning mr-4">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
+                    <div class="flex text-warning mr-4"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                     <span class="text-text-secondary font-semibold">RV Success Story</span>
                 </div>
-                <blockquote class="text-lg text-text-secondary mb-6 italic">
-                    "As full-time RVers, the RV Maintenance Handbook has been invaluable. We've avoided three major breakdowns thanks to the preventive maintenance schedule. The dump station directory alone has saved us hours of searching!"
-                </blockquote>
+                <blockquote class="text-lg text-text-secondary mb-6 italic">"As full-time RVers, the RV Maintenance Handbook has been invaluable. We've avoided three major breakdowns thanks to the preventive maintenance schedule. The dump station directory alone has saved us hours of searching!"</blockquote>
                 <div class="flex items-center">
-                    <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mr-4">
-                        <span class="text-secondary font-semibold">JL</span>
-                    </div>
+                    <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mr-4"><span class="text-secondary font-semibold">JL</span></div>
                     <div>
                         <p class="font-semibold text-text-primary">Jim & Linda Rodriguez</p>
                         <p class="text-sm text-text-secondary">Full-time RVers • 2 Years on the Road</p>
@@ -606,15 +362,9 @@ title: Care Guides
     <div class="bg-surface rounded-lg max-w-md w-full p-6">
         <div class="flex items-center justify-between mb-4">
             <h3 class="text-xl font-heading font-bold text-text-primary">Download Guide</h3>
-            <button id="close-modal" class="text-text-secondary hover:text-text-primary">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-            </button>
+            <button id="close-modal" class="text-text-secondary hover:text-text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
         </div>
-        <div id="modal-content">
-            <!-- Dynamic content will be inserted here -->
-        </div>
+        <div id="modal-content"></div>
     </div>
 </div>
 
@@ -631,187 +381,105 @@ title: Care Guides
 
 <!-- JavaScript -->
 <script>
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (mobileMenuButton) {
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
-
-    // Filter functionality
-    const propertyFilter = document.getElementById('property-filter');
-    const skillFilter = document.getElementById('skill-filter');
-    const lengthFilter = document.getElementById('length-filter');
-    const resetFilters = document.getElementById('reset-filters');
-    const guidesGrid = document.getElementById('guides-grid');
-    const guideCards = document.querySelectorAll('.guide-card');
-
-    function filterGuides() {
-        const propertyValue = propertyFilter.value;
-        const skillValue = skillFilter.value;
-        const lengthValue = lengthFilter.value;
-
-        guideCards.forEach(card => {
-            const cardProperty = card.dataset.property;
-            const cardSkill = card.dataset.skill;
-            const cardLength = card.dataset.length;
-
-            const propertyMatch = !propertyValue || cardProperty === propertyValue;
-            const skillMatch = !skillValue || cardSkill === skillValue;
-            const lengthMatch = !lengthValue || cardLength === lengthValue;
-
-            if (propertyMatch && skillMatch && lengthMatch) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
-
-    propertyFilter.addEventListener('change', filterGuides);
-    skillFilter.addEventListener('change', filterGuides);
-    lengthFilter.addEventListener('change', filterGuides);
-
-    resetFilters.addEventListener('click', () => {
-        propertyFilter.value = '';
-        skillFilter.value = '';
-        lengthFilter.value = '';
-        filterGuides();
-    });
-
-    // Download functionality
-    const downloadButtons = document.querySelectorAll('.download-btn');
-    const downloadModal = document.getElementById('download-modal');
-    const closeModal = document.getElementById('close-modal');
-    const modalContent = document.getElementById('modal-content');
-    const loadingOverlay = document.getElementById('loading-overlay');
-    const progressBar = document.getElementById('progress-bar');
-
-    const guideData = {
-        'diy-repair': {
-            title: 'DIY Septic Repair Techniques Manual',
-            price: '$29.99',
-            description: 'Complete step-by-step guide for common septic repairs including pipe fixes, baffle replacement, and pump maintenance.',
-            features: ['68 pages of expert content', 'Step-by-step photo instructions', 'Troubleshooting flowcharts', 'Safety guidelines', 'Tool recommendations']
-        },
-        'small-property': {
-            title: 'Small Property Septic Solutions Guide',
-            price: '$19.99',
-            description: 'Perfect for tiny homes, cabins, and small properties. Learn about compact septic systems and space-efficient maintenance.',
-            features: ['42 pages of specialized content', 'Compact system designs', 'Space-saving solutions', 'Cost-effective options', 'Maintenance schedules']
-        },
-        'rv-maintenance': {
-            title: 'RV Septic System Maintenance Handbook',
-            price: '$24.99',
-            description: 'Essential guide for RV owners covering dump station etiquette, tank cleaning, and mobile septic system maintenance.',
-            features: ['35 pages of RV-specific content', 'Dump station directory', 'Troubleshooting guide', 'Maintenance calendar', 'Emergency procedures']
-        },
-        'landscaping': {
-            title: 'Septic-Safe Landscaping Planner',
-            price: '$14.99',
-            description: 'Design beautiful landscapes that protect your septic system with safe plants and proper drainage techniques.',
-            features: ['18 pages of landscaping wisdom', 'Plant selection guide', 'Drainage solutions', 'Design templates', 'Seasonal care tips']
-        },
-        'permit-prep': {
-            title: 'Septic System Permit & Inspection Prep Kit',
-            price: '$22.99',
-            description: 'Navigate permits and inspections with confidence using our comprehensive preparation strategies.',
-            features: ['31 pages of regulatory guidance', 'Inspection checklists', 'Permit applications', 'Preparation timelines', 'Common violation fixes']
-        },
-        'starter-kit': {
-            title: 'New Homeowner\'s Septic System Starter Kit',
-            price: '$27.99',
-            description: 'Everything new homeowners need to know about septic systems to prevent costly mistakes.',
-            features: ['45 pages of essential knowledge', 'Basic operation guide', 'Maintenance schedules', 'Warning signs checklist', 'Emergency contacts']
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
         }
-    };
 
-    downloadButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const guideId = this.dataset.guide;
-            const guide = guideData[guideId];
-            
-            modalContent.innerHTML = `
-                <div class="mb-6">
-                    <h4 class="text-lg font-heading font-semibold text-text-primary mb-2">${guide.title}</h4>
-                    <p class="text-text-secondary mb-4">${guide.description}</p>
-                    <div class="text-2xl font-heading font-bold text-primary mb-4">${guide.price}</div>
-                    <ul class="space-y-2 mb-6">
-                        ${guide.features.map(feature => `<li class="flex items-center text-text-secondary"><svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>${feature}</li>`).join('')}
-                    </ul>
-                </div>
-                <form id="download-form" class="space-y-4">
-                    <input type="email" placeholder="Enter your email address" required
-                        class="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors">
-                    <button type="submit" class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale">
-                        Download Now
-                    </button>
-                    <p class="text-xs text-text-secondary text-center">
-                        Instant download after purchase. 30-day money-back guarantee.
-                    </p>
-                </form>
-            `;
-            
-            downloadModal.classList.remove('hidden');
-            
-            // Handle download form submission
-            document.getElementById('download-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                downloadModal.classList.add('hidden');
-                
-                // Show loading overlay with progress
-                loadingOverlay.classList.remove('hidden');
-                let progress = 0;
-                const progressInterval = setInterval(() => {
-                    progress += Math.random() * 30;
-                    if (progress > 100) progress = 100;
-                    progressBar.style.width = progress + '%';
-                    
-                    if (progress >= 100) {
-                        clearInterval(progressInterval);
-                        setTimeout(() => {
-                            loadingOverlay.classList.add('hidden');
-                            alert('Download complete! Check your email for the download link.');
-                            progressBar.style.width = '0%';
-                        }, 500);
-                    }
-                }, 200);
+        const propertyFilter = document.getElementById('property-filter');
+        const skillFilter = document.getElementById('skill-filter');
+        const lengthFilter = document.getElementById('length-filter');
+        const resetFilters = document.getElementById('reset-filters');
+        const guideCards = document.querySelectorAll('.guide-card');
+
+        function filterGuides() {
+            const propertyValue = propertyFilter.value;
+            const skillValue = skillFilter.value;
+            const lengthValue = lengthFilter.value;
+            guideCards.forEach(card => {
+                const cardProperty = card.dataset.property;
+                const cardSkill = card.dataset.skill;
+                const cardLength = card.dataset.length;
+                const propertyMatch = !propertyValue || cardProperty === propertyValue;
+                const skillMatch = !skillValue || cardSkill === skillValue;
+                const lengthMatch = !lengthValue || cardLength === lengthValue;
+                if (propertyMatch && skillMatch && lengthMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        if(propertyFilter) {
+            propertyFilter.addEventListener('change', filterGuides);
+            skillFilter.addEventListener('change', filterGuides);
+            lengthFilter.addEventListener('change', filterGuides);
+            resetFilters.addEventListener('click', () => {
+                propertyFilter.value = '';
+                skillFilter.value = '';
+                lengthFilter.value = '';
+                filterGuides();
+            });
+        }
+
+        const downloadButtons = document.querySelectorAll('.download-btn');
+        const downloadModal = document.getElementById('download-modal');
+        const closeModal = document.getElementById('close-modal');
+        const modalContent = document.getElementById('modal-content');
+        const loadingOverlay = document.getElementById('loading-overlay');
+        const progressBar = document.getElementById('progress-bar');
+
+        const guideData = {
+            'diy-repair': { title: 'DIY Septic Repair Techniques Manual', price: '$29.99', description: 'Complete step-by-step guide for common septic repairs including pipe fixes, baffle replacement, and pump maintenance.', features: ['68 pages of expert content', 'Step-by-step photo instructions', 'Troubleshooting flowcharts', 'Safety guidelines', 'Tool recommendations'] },
+            'small-property': { title: 'Small Property Septic Solutions Guide', price: '$19.99', description: 'Perfect for tiny homes, cabins, and small properties. Learn about compact septic systems and space-efficient maintenance.', features: ['42 pages of specialized content', 'Compact system designs', 'Space-saving solutions', 'Cost-effective options', 'Maintenance schedules'] },
+            'rv-maintenance': { title: 'RV Septic System Maintenance Handbook', price: '$24.99', description: 'Essential guide for RV owners covering dump station etiquette, tank cleaning, and mobile septic system maintenance.', features: ['35 pages of RV-specific content', 'Dump station directory', 'Troubleshooting guide', 'Maintenance calendar', 'Emergency procedures'] },
+            'landscaping': { title: 'Septic-Safe Landscaping Planner', price: '$14.99', description: 'Design beautiful landscapes that protect your septic system with safe plants and proper drainage techniques.', features: ['18 pages of landscaping wisdom', 'Plant selection guide', 'Drainage solutions', 'Design templates', 'Seasonal care tips'] },
+            'permit-prep': { title: 'Septic System Permit & Inspection Prep Kit', price: '$22.99', description: 'Navigate permits and inspections with confidence using our comprehensive preparation strategies.', features: ['31 pages of regulatory guidance', 'Inspection checklists', 'Permit applications', 'Preparation timelines', 'Common violation fixes'] },
+            'starter-kit': { title: 'New Homeowner\'s Septic System Starter Kit', price: '$27.99', description: 'Everything new homeowners need to know about septic systems to prevent costly mistakes.', features: ['45 pages of essential knowledge', 'Basic operation guide', 'Maintenance schedules', 'Warning signs checklist', 'Emergency contacts'] }
+        };
+
+        downloadButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const guideId = this.dataset.guide;
+                const guide = guideData[guideId];
+                modalContent.innerHTML = `<div class="mb-6"><h4 class="text-lg font-heading font-semibold text-text-primary mb-2">${guide.title}</h4><p class="text-text-secondary mb-4">${guide.description}</p><div class="text-2xl font-heading font-bold text-primary mb-4">${guide.price}</div><ul class="space-y-2 mb-6">${guide.features.map(feature => `<li class="flex items-center text-text-secondary"><svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>${feature}</li>`).join('')}</ul></div><form id="download-form" class="space-y-4"><input type="email" placeholder="Enter your email address" required class="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors"><button type="submit" class="w-full bg-primary hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors hover-scale">Download Now</button><p class="text-xs text-text-secondary text-center">Instant download after purchase. 30-day money-back guarantee.</p></form>`;
+                if(downloadModal) downloadModal.classList.remove('hidden');
+                document.getElementById('download-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    if(downloadModal) downloadModal.classList.add('hidden');
+                    if(loadingOverlay) loadingOverlay.classList.remove('hidden');
+                    let progress = 0;
+                    const progressInterval = setInterval(() => {
+                        progress += Math.random() * 30;
+                        if (progress > 100) progress = 100;
+                        if(progressBar) progressBar.style.width = progress + '%';
+                        if (progress >= 100) {
+                            clearInterval(progressInterval);
+                            setTimeout(() => {
+                                if(loadingOverlay) loadingOverlay.classList.add('hidden');
+                                alert('Download complete! Check your email for the download link.');
+                                if(progressBar) progressBar.style.width = '0%';
+                            }, 500);
+                        }
+                    }, 200);
+                });
             });
         });
-    });
-
-    closeModal.addEventListener('click', () => {
-        downloadModal.classList.add('hidden');
-    });
-
-    // Close modal when clicking outside
-    downloadModal.addEventListener('click', (e) => {
-        if (e.target === downloadModal) {
-            downloadModal.classList.add('hidden');
+        if(closeModal) {
+            closeModal.addEventListener('click', () => {
+                downloadModal.classList.add('hidden');
+            });
         }
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Add loading animation to images
-    document.querySelectorAll('img').forEach(img => {
-        img.addEventListener('load', function() {
-            this.classList.add('opacity-100');
-        });
+        if(downloadModal) {
+            downloadModal.addEventListener('click', (e) => {
+                if (e.target === downloadModal) {
+                    downloadModal.classList.add('hidden');
+                }
+            });
+        }
     });
 </script>
