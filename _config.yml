@@ -1,8 +1,11 @@
 # Site settings
 title: Septic Sense
 description: "Your guide to septic system maintenance, care, and solutions. Expert advice for homeowners."
-url: "https://septicsense.github.io" # This will be your live site URL
-baseurl: "/Septic-Sense" # This MUST match your repository name
+
+# For a Netlify deployment, it's best to leave the url and baseurl blank.
+# Netlify automatically handles the URL, and your site is at the root, not a sub-directory.
+url: ""
+baseurl: ""
 
 # Author/Owner
 author:
@@ -12,5 +15,3 @@ author:
 theme: minima
 plugins:
   - jekyll-feed
-
-# We will add more configurations here later.
