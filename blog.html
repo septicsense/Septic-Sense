@@ -16,7 +16,7 @@ title: Blog
     </div>
 </section>
 
-<!-- Featured Article Hero Section (STATIC CONTENT, BUT LINK IS NOW CORRECT) -->
+<!-- Featured Article Hero Section (STATIC - UNCHANGED) -->
 <section class="py-12 bg-gradient-to-br from-primary-50 to-secondary-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -42,7 +42,6 @@ title: Blog
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <!-- THIS LINK IS NOW CORRECTED -->
                     <a href="{{ '/posts/2025-01-15-5-signs-your-septic-tank-needs-immediate-attention.html' | relative_url }}" class="bg-primary hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors hover-scale text-center">
                         Read Full Article
                     </a>
@@ -62,12 +61,11 @@ title: Blog
 <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-4 gap-8">
-            <!-- Sidebar (Links are verified and correct) -->
+            <!-- Sidebar (Correct, clickable links) -->
             <aside class="lg:col-span-1 order-2 lg:order-1">
                 <div class="bg-surface p-6 rounded-lg shadow-card border border-border mb-6">
                     <h3 class="text-lg font-heading font-semibold text-text-primary mb-4">Popular Posts</h3>
                     <div class="space-y-4">
-                        <!-- Popular Post 1 -->
                         <a href="{{ '/posts/2025-01-12-complete-rv-septic-system-maintenance-guide.html' | relative_url }}" class="block hover:bg-gray-50 p-2 rounded-md -m-2 transition-colors">
                             <div class="flex items-start space-x-3">
                                 <img src="{{ '/assets/images/popular-post-rv-septic-maintenance.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
@@ -77,7 +75,6 @@ title: Blog
                                 </div>
                             </div>
                         </a>
-                        <!-- Popular Post 2 -->
                         <a href="{{ '/posts/2025-01-10-diy-vs-professional-when-to-call-the-experts.html' | relative_url }}" class="block hover:bg-gray-50 p-2 rounded-md -m-2 transition-colors">
                             <div class="flex items-start space-x-3">
                                 <img src="{{ '/assets/images/popular-post-diy-vs-professional.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
@@ -87,7 +84,6 @@ title: Blog
                                 </div>
                             </div>
                         </a>
-                        <!-- Popular Post 3 -->
                         <a href="{{ '/posts/2025-02-01-winter-septic-system-protection.html' | relative_url }}" class="block hover:bg-gray-50 p-2 rounded-md -m-2 transition-colors">
                             <div class="flex items-start space-x-3">
                                 <img src="{{ '/assets/images/popular-post-winter-septic-protection.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
@@ -101,7 +97,7 @@ title: Blog
                 </div>
             </aside>
 
-            <!-- Main Article Grid (Dynamic links are already correct) -->
+            <!-- Main Article Grid (AUTOMATED with Load More Logic) -->
             <main class="lg:col-span-3 order-1 lg:order-2">
                 <div class="flex justify-between items-center mb-8">
                     <h2 class="text-2xl md:text-3xl font-heading font-bold text-text-primary">Latest Articles</h2>
@@ -147,7 +143,7 @@ title: Blog
                     {% endfor %}
                 </div>
                 
-                <!-- Load More Button -->
+                <!-- "Load More" Button (Conditional) -->
                 {% if site.posts.size > 6 %}
                 <div class="text-center">
                     <button id="load-more-btn" class="bg-surface hover:bg-gray-50 text-text-primary border border-border px-8 py-4 rounded-lg font-semibold transition-colors hover-scale">
@@ -160,7 +156,7 @@ title: Blog
     </div>
 </section>
 
-<!-- JavaScript for Load More -->
+<!-- JavaScript for "Load More" (Unchanged) -->
 <script>
     const loadMoreBtn = document.getElementById('load-more-btn');
     if (loadMoreBtn) {
