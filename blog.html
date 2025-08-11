@@ -7,7 +7,7 @@ title: Blog
 <section class="bg-surface border-b border-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <nav class="flex items-center space-x-2 text-sm">
-            <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+            <a href="{{ '/' | relative_url }}" class="text-text-secondary hover:text-primary transition-colors">Home</a>
             <svg class="w-4 h-4 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 5l7 7-7 7"/>
             </svg>
@@ -16,7 +16,7 @@ title: Blog
     </div>
 </section>
 
-<!-- Featured Article Hero Section -->
+<!-- Featured Article Hero Section (STATIC CONTENT, BUT LINK IS NOW CORRECT) -->
 <section class="py-12 bg-gradient-to-br from-primary-50 to-secondary-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -42,7 +42,8 @@ title: Blog
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="../posts/2025-01-15-5-signs-your-septic-tank-needs-immediate-attention.html" class="bg-primary hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors hover-scale text-center">
+                    <!-- THIS LINK IS NOW CORRECTED -->
+                    <a href="{{ '/posts/2025-01-15-5-signs-your-septic-tank-needs-immediate-attention.html' | relative_url }}" class="bg-primary hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors hover-scale text-center">
                         Read Full Article
                     </a>
                 </div>
@@ -61,323 +62,110 @@ title: Blog
 <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-4 gap-8">
-            <!-- Sidebar (Mobile: Bottom, Desktop: Left) -->
+            <!-- Sidebar (Links are verified and correct) -->
             <aside class="lg:col-span-1 order-2 lg:order-1">
-                <!-- Popular Posts -->
                 <div class="bg-surface p-6 rounded-lg shadow-card border border-border mb-6">
                     <h3 class="text-lg font-heading font-semibold text-text-primary mb-4">Popular Posts</h3>
                     <div class="space-y-4">
-                        <div class="flex items-start space-x-3">
-                            <img src="{{ '/assets/images/popular-post-rv-septic-maintenance.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg" loading="lazy" />
-                            <div class="flex-1">
-                                <h4 class="text-sm font-semibold text-text-primary mb-1">Complete RV Septic Maintenance Guide</h4>
-                                <p class="text-xs text-text-secondary">Jan 12, 2025</p>
+                        <!-- Popular Post 1 -->
+                        <a href="{{ '/posts/2025-01-12-complete-rv-septic-system-maintenance-guide.html' | relative_url }}" class="block hover:bg-gray-50 p-2 rounded-md -m-2 transition-colors">
+                            <div class="flex items-start space-x-3">
+                                <img src="{{ '/assets/images/popular-post-rv-septic-maintenance.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                                <div class="flex-1">
+                                    <h4 class="text-sm font-semibold text-text-primary mb-1">Complete RV Septic Maintenance Guide</h4>
+                                    <p class="text-xs text-text-secondary">Jan 12, 2025</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <img src="{{ '/assets/images/popular-post-diy-vs-professional.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg" loading="lazy" />
-                            <div class="flex-1">
-                                <h4 class="text-sm font-semibold text-text-primary mb-1">DIY vs Professional: When to Call Experts</h4>
-                                <p class="text-xs text-text-secondary">Jan 10, 2025</p>
+                        </a>
+                        <!-- Popular Post 2 -->
+                        <a href="{{ '/posts/2025-01-10-diy-vs-professional-when-to-call-the-experts.html' | relative_url }}" class="block hover:bg-gray-50 p-2 rounded-md -m-2 transition-colors">
+                            <div class="flex items-start space-x-3">
+                                <img src="{{ '/assets/images/popular-post-diy-vs-professional.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                                <div class="flex-1">
+                                    <h4 class="text-sm font-semibold text-text-primary mb-1">DIY vs Professional: When to Call Experts</h4>
+                                    <p class="text-xs text-text-secondary">Jan 10, 2025</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <img src="{{ '/assets/images/popular-post-winter-septic-protection.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg" loading="lazy" />
-                            <div class="flex-1">
-                                <h4 class="text-sm font-semibold text-text-primary mb-1">Winter Septic System Protection</h4>
-                                <p class="text-xs text-text-secondary">Jan 8, 2025</p>
+                        </a>
+                        <!-- Popular Post 3 -->
+                        <a href="{{ '/posts/2025-02-01-winter-septic-system-protection.html' | relative_url }}" class="block hover:bg-gray-50 p-2 rounded-md -m-2 transition-colors">
+                            <div class="flex items-start space-x-3">
+                                <img src="{{ '/assets/images/popular-post-winter-septic-protection.png' | relative_url }}" alt="Popular post thumbnail" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                                <div class="flex-1">
+                                    <h4 class="text-sm font-semibold text-text-primary mb-1">Winter Septic System Protection</h4>
+                                    <p class="text-xs text-text-secondary">Jan 8, 2025</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </aside>
 
-            <!-- Main Article Grid -->
+            <!-- Main Article Grid (Dynamic links are already correct) -->
             <main class="lg:col-span-3 order-1 lg:order-2">
                 <div class="flex justify-between items-center mb-8">
                     <h2 class="text-2xl md:text-3xl font-heading font-bold text-text-primary">Latest Articles</h2>
-                    <div class="flex items-center space-x-4">
-                        <select class="border border-border rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors">
-                            <option>Sort by Latest</option>
-                            <option>Sort by Popular</option>
-                            <option>Sort by Category</option>
-                        </select>
-                    </div>
                 </div>
 
                 <!-- Article Grid -->
-                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-12">
-                    <!-- Article Card 1 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col">
-                        <img src="{{ '/assets/images/article-septic-system-maintenance.png' | relative_url }}" alt="Septic system maintenance" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    {% for post in site.posts %}
+                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col {% if forloop.index > 6 %}hidden-article hidden{% endif %}">
+                        {% if post.image %}
+                        <a href="{{ post.url | relative_url }}">
+                           <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
+                        </a>
+                        {% endif %}
                         <div class="p-6 flex flex-col flex-grow">
                             <div class="flex items-center justify-between mb-3">
-                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-xs font-semibold">Maintenance Tips</span>
-                                <span class="text-text-secondary text-sm">Jan 14, 2025</span>
+                                {% if post.category %}
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-xs font-semibold">{{ post.category }}</span>
+                                {% endif %}
+                                <span class="text-text-secondary text-sm">{{ post.date | date: "%b %d, %Y" }}</span>
                             </div>
                             <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                How to Properly Maintain Your Septic System Year-Round
+                                <a href="{{ post.url | relative_url }}" class="hover:text-primary">{{ post.title }}</a>
                             </h3>
                             <p class="text-text-secondary mb-4 flex-grow">
-                                Essential maintenance tasks for every season to keep your septic system running efficiently and prevent costly repairs.
+                                {{ post.description }}
                             </p>
                             <div class="flex items-center justify-between mt-auto">
                                 <div class="flex items-center">
+                                    {% if post.author_initials %}
                                     <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-secondary font-semibold text-xs">JD</span>
+                                        <span class="text-secondary font-semibold text-xs">{{ post.author_initials }}</span>
                                     </div>
-                                    <span class="text-sm text-text-secondary">John Davis</span>
+                                    {% endif %}
+                                    <span class="text-sm text-text-secondary">{{ post.author_name }}</span>
                                 </div>
-                                <a href="../posts/2025-01-14-how-to-properly-maintain-your-septic-system-year-round.html" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
+                                <a href="{{ post.url | relative_url }}" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
                                     Read More →
                                 </a>
                             </div>
                         </div>
                     </article>
-
-                    <!-- Article Card 2 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col">
-                        <img src="{{ '/assets/images/article-emergency-septic-repair.png' | relative_url }}" alt="Emergency septic repair" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-xs font-semibold">Emergency Repairs</span>
-                                <span class="text-text-secondary text-sm">Jan 13, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                Emergency Septic System Troubleshooting Guide
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                Step-by-step instructions for handling common septic emergencies before professional help arrives.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-accent font-semibold text-xs">SM</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Sarah Miller</span>
-                                </div>
-                                <a href="../posts/2025-01-13-emergency-septic-system-troubleshooting-guide.html" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article Card 3 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col">
-                        <img src="{{ '/assets/images/article-rv-septic-system.png' | relative_url }}" alt="RV septic system" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-warning-100 text-warning px-3 py-1 rounded-full text-xs font-semibold">RV Care</span>
-                                <span class="text-text-secondary text-sm">Jan 12, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                RV Septic System Best Practices for Long Trips
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                Essential tips for managing your RV's septic system during extended travel and camping adventures.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-warning-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-warning font-semibold text-xs">MJ</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Mike Johnson</span>
-                                </div>
-                                <a href="../posts/2025-01-25-rv-septic-system-best-practices-for-long-trips.html" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article Card 4 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col">
-                        <img src="{{ '/assets/images/article-seasonal-septic-care.png' | relative_url }}" alt="Seasonal septic care" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-xs font-semibold">Seasonal Guides</span>
-                                <span class="text-text-secondary text-sm">Jan 11, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                Winter Septic System Protection and Maintenance
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                Protect your septic system from freezing temperatures and winter-related damage with these proven strategies.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-primary font-semibold text-xs">LB</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Lisa Brown</span>
-                                </div>
-                                <a href="../posts/2025-02-01-winter-septic-system-protection.html" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article Card 5 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col">
-                        <img src="{{ '/assets/images/article-septic-system-inspection.png' | relative_url }}" alt="Septic system inspection" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-xs font-semibold">Maintenance Tips</span>
-                                <span class="text-text-secondary text-sm">Jan 9, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                Complete Septic System Inspection Checklist
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                Professional inspection checklist to help homeowners identify potential issues before they become major problems.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-secondary font-semibold text-xs">DR</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Dr. Robert Martinez</span>
-                                </div>
-                                <a href="../posts/2025-02-10-complete-septic-inspection-checklist.html" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article Card 6 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col">
-                        <img src="{{ '/assets/images/article-diy-septic-maintenance.png' | relative_url }}" alt="DIY septic maintenance" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-xs font-semibold">Emergency Repairs</span>
-                                <span class="text-text-secondary text-sm">Jan 8, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                Common Septic System Problems and DIY Solutions
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                Learn to diagnose and fix common septic issues yourself, saving money on professional service calls.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-accent font-semibold text-xs">TC</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Tom Chen</span>
-                                </div>
-                                <a href="../posts/2025-02-18-common-septic-problems-and-diy-solutions.html" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- NEW HIDDEN ARTICLE 7 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col hidden-article hidden">
-                        <img src="{{ '/assets/images/hidden-article-septic-safe-products.png' | relative_url }}" alt="Septic safe products" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-xs font-semibold">Maintenance Tips</span>
-                                <span class="text-text-secondary text-sm">Jan 7, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                What Not to Flush: A Guide to Septic-Safe Products
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                Protect your system by learning which common household products should never go down the drain.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-secondary font-semibold text-xs">EM</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Emily White</span>
-                                </div>
-                                <a href="#" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- NEW HIDDEN ARTICLE 8 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col hidden-article hidden">
-                        <img src="{{ '/assets/images/hidden-article-septic-landscaping.png' | relative_url }}" alt="Septic system landscaping" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-xs font-semibold">Seasonal Guides</span>
-                                <span class="text-text-secondary text-sm">Jan 6, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                Landscaping for a Healthy Septic System
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                Discover the best plants and landscaping practices to use around your drainfield to ensure proper function.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-primary font-semibold text-xs">AG</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Alex Green</span>
-                                </div>
-                                <a href="#" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- NEW HIDDEN ARTICLE 9 -->
-                    <article class="bg-surface rounded-lg shadow-card hover:shadow-card-elevated transition-shadow hover-scale flex flex-col hidden-article hidden">
-                        <img src="{{ '/assets/images/hidden-article-septic-additives.png' | relative_url }}" alt="Septic additives" class="w-full h-48 object-cover rounded-t-lg" loading="lazy" />
-                        <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="bg-warning-100 text-warning px-3 py-1 rounded-full text-xs font-semibold">RV Care</span>
-                                <span class="text-text-secondary text-sm">Jan 5, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-heading font-semibold text-text-primary mb-3">
-                                Septic Additives: Helpful or Harmful?
-                            </h3>
-                            <p class="text-text-secondary mb-4 flex-grow">
-                                We break down the science behind common septic additives to help you decide if they are right for your system.
-                            </p>
-                            <div class="flex items-center justify-between mt-auto">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-warning-100 rounded-full flex items-center justify-center mr-2">
-                                        <span class="text-warning font-semibold text-xs">DR</span>
-                                    </div>
-                                    <span class="text-sm text-text-secondary">Dr. Robert Martinez</span>
-                                </div>
-                                <a href="#" class="text-primary font-semibold hover:text-primary-700 transition-colors text-sm">
-                                    Read More →
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    {% endfor %}
                 </div>
-
+                
                 <!-- Load More Button -->
+                {% if site.posts.size > 6 %}
                 <div class="text-center">
                     <button id="load-more-btn" class="bg-surface hover:bg-gray-50 text-text-primary border border-border px-8 py-4 rounded-lg font-semibold transition-colors hover-scale">
                         Load More Articles
                     </button>
                 </div>
+                {% endif %}
             </main>
         </div>
     </div>
 </section>
 
-<!-- JavaScript -->
+<!-- JavaScript for Load More -->
 <script>
-    // Load More Articles functionality
     const loadMoreBtn = document.getElementById('load-more-btn');
-    const hiddenArticles = document.querySelectorAll('.hidden-article');
-
     if (loadMoreBtn) {
+        const hiddenArticles = document.querySelectorAll('.hidden-article');
+
         loadMoreBtn.addEventListener('click', () => {
             hiddenArticles.forEach(article => {
                 article.classList.remove('hidden');
