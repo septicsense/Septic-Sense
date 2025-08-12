@@ -57,7 +57,8 @@ title: About Us
 
             <!-- Team Photo -->
             <div class="relative">
-                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80" alt="SepticSense professional team" class="w-full h-96 object-cover rounded-lg shadow-card-elevated" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                <!-- FIXED: Image path updated -->
+                <img src="assets/images/ourstory.jpeg" alt="SepticSense professional team" class="w-full h-96 object-cover rounded-lg shadow-card-elevated" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
             </div>
         </div>
@@ -193,7 +194,8 @@ title: About Us
 
             <!-- Map Placeholder -->
             <div class="relative">
-                <img src="https://images.pexels.com/photos/1252814/pexels-photo-1252814.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Service area coverage map" class="w-full h-96 object-cover rounded-lg shadow-card-elevated" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                <!-- FIXED: Image path updated -->
+                <img src="assets/images/map.jpeg" alt="Service area coverage map" class="w-full h-96 object-cover rounded-lg shadow-card-elevated" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
                 <div class="absolute bottom-4 left-4 right-4">
                     <div class="bg-surface/90 backdrop-blur-sm p-4 rounded-lg">
@@ -313,7 +315,7 @@ title: About Us
                     </svg>
                 </button>
                 <div id="faq-1" class="accordion-content h-0">
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 pt-2">
                         <p class="text-text-secondary">We provide 24/7 emergency response with technicians typically arriving within 2-4 hours for urgent situations. Our emergency hotline (1-800-SEPTIC-1) connects you directly to our dispatch center for immediate assistance.</p>
                     </div>
                 </div>
@@ -328,7 +330,7 @@ title: About Us
                     </svg>
                 </button>
                 <div id="faq-2" class="accordion-content h-0">
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 pt-2">
                         <p class="text-text-secondary">We serve all 50 US states, all Canadian provinces and territories, and select European countries including the UK, Ireland, and several EU nations. Our network of certified partners ensures local expertise in your area.</p>
                     </div>
                 </div>
@@ -343,7 +345,7 @@ title: About Us
                     </svg>
                 </button>
                 <div id="faq-3" class="accordion-content h-0">
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 pt-2">
                         <p class="text-text-secondary">Yes! All our interactive tools and calculators are completely free to use. We believe in providing valuable resources to help homeowners and RV owners make informed decisions about their septic systems.</p>
                     </div>
                 </div>
@@ -358,7 +360,7 @@ title: About Us
                     </svg>
                 </button>
                 <div id="faq-4" class="accordion-content h-0">
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 pt-2">
                         <p class="text-text-secondary">Absolutely! We offer both free initial consultations and comprehensive paid consultation services. Our certified experts can assess your specific situation and provide personalized recommendations for maintenance, repairs, or system upgrades.</p>
                     </div>
                 </div>
@@ -373,7 +375,7 @@ title: About Us
                     </svg>
                 </button>
                 <div id="faq-5" class="accordion-content h-0">
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 pt-2">
                         <p class="text-text-secondary">We combine traditional septic expertise with modern technology, offering comprehensive digital tools, educational resources, and professional services. Our focus on education empowers customers to maintain their systems proactively, often preventing costly repairs.</p>
                     </div>
                 </div>
@@ -382,32 +384,36 @@ title: About Us
     </div>
 </section>
 
-<!-- This page-specific JavaScript is good to keep here -->
+<!-- FIXED: Added style block for accordion CSS -->
+<style>
+    .accordion-content {
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+    .chevron-rotate.open {
+        transform: rotate(180deg);
+    }
+</style>
+
+<!-- FIXED: Improved JavaScript logic for accordion -->
 <script>
-    // FAQ Toggle Function
     function toggleFAQ(index) {
         const content = document.getElementById(`faq-${index}`);
         const chevron = document.getElementById(`chevron-${index}`);
-        const allContents = document.querySelectorAll('.accordion-content');
-        const allChevrons = document.querySelectorAll('.chevron-rotate');
+        const isOpen = content.style.height !== '0px' && content.style.height !== '';
 
-        allContents.forEach((item, i) => {
-            if (i + 1 !== index) {
-                item.style.height = '0px';
-            }
+        // First, close all accordions
+        document.querySelectorAll('.accordion-content').forEach(item => {
+            item.style.height = '0px';
         });
-        allChevrons.forEach((item, i) => {
-             if (i + 1 !== index) {
-                item.classList.remove('open');
-            }
+        document.querySelectorAll('.chevron-rotate').forEach(item => {
+            item.classList.remove('open');
         });
-        
-        if (content.style.height === '0px' || content.style.height === '') {
+
+        // If the clicked item was not already open, then open it
+        if (!isOpen) {
             content.style.height = content.scrollHeight + 'px';
             chevron.classList.add('open');
-        } else {
-            content.style.height = '0px';
-            chevron.classList.remove('open');
         }
     }
 </script>
